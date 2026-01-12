@@ -13,7 +13,7 @@ const cars = [
 
 const carsPrices = cars.map(car => car.price)
 
-console.log(carsPrices.toSorted((a, b) => b - a)[0]);
+console.log(cars.toSorted((a, b) => b.price - a.price)[0]);
 
 const BMWPrice = cars.reduce((acc, car) => car.brand === "BMW" ? acc + car.price : acc, 0);
 
